@@ -7,6 +7,10 @@ class Review extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Travel Companion',style: TextStyle(
+          color: Colors.black,fontSize: 20.0,letterSpacing: 2.0,
+        ),),
+        centerTitle: true,
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Icon(Icons.menu,size: 30,color: Colors.black54,),
@@ -26,13 +30,19 @@ class Review extends StatelessWidget {
           )
         ],
       ),
+    floatingActionButton: FloatingActionButton(
+    onPressed: () {
+    // Add your onPressed code here!
+    },
+    backgroundColor: Colors.black,
+    child: const Icon(Icons.add),),
       body: Padding(
         padding: const EdgeInsets.only(left: 20.0,top: 15.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             lgtxt(text: 'Review'),
-            SizedBox(height: 33.0,),
+            SizedBox(height: 10.0,),
             lgtxt(text: 'No reviews yet',size: 20.0,),
             SizedBox(height: 10.0,),
             txt(text: 'You have not written any review yet, get started!'),
@@ -82,7 +92,7 @@ class Review extends StatelessWidget {
                 children: [
                   Container(
                     width: 500,
-                    height: 300,
+                    height: 260,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.white,
@@ -95,13 +105,13 @@ class Review extends StatelessWidget {
                   ),
 
                   Positioned(
-                    top:120,
+                    top:90,
                     left: 40,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         lgtxt(text:'We want you to \nwrite a review ',color: Colors.white,
-                            size:30),
+                            size:25),
                         SizedBox(height: 3.0,),
                         Text('Because who else would we turn to for \ntravel advice?',style: TextStyle(
                           fontSize:17,

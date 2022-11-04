@@ -29,7 +29,7 @@ class _MainState extends State<Main> {
           type: BottomNavigationBarType.shifting,
           currentIndex: selectedindex,
           elevation: 0,
-          selectedItemColor: Colors.black54,
+          selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey.withOpacity(0.7),
           showUnselectedLabels: false,
           showSelectedLabels: true,
@@ -98,6 +98,10 @@ int selectedindex1=8,selectedindex2=8;
     TabController _tabcontrol = TabController(length: 2, vsync: this);
     return Scaffold(
       appBar: AppBar(
+        title: Text('Travel Companion',style: TextStyle(
+          color: Colors.black,fontSize: 20.0,letterSpacing: 2.0,
+        ),),
+        centerTitle: true,
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Icon(Icons.menu,size: 30,color: Colors.black54,),

@@ -16,6 +16,10 @@ class _PlanState extends State<Plan> with TickerProviderStateMixin {
     TabController _tabcontrol = TabController(length: 3, vsync: this);
     return Scaffold(
       appBar: AppBar(
+        title: Text('Travel Companion',style: TextStyle(
+          color: Colors.black,fontSize: 20.0,letterSpacing: 2.0,
+        ),),
+        centerTitle: true,
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Icon(Icons.menu,size: 30,color: Colors.black54,),
