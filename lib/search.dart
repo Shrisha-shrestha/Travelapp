@@ -132,7 +132,7 @@ class _SearchState extends State<Search> {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        lgtxt(text:'Top experiences on Trip Companion',size: 22.0,),
+                        lgtxt(text:'Top experiences on Travel Companion',size: 22.0,),
                       ]
                   ),
                 ),
