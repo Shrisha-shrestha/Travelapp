@@ -137,7 +137,7 @@ class _PlanState extends State<Plan> with TickerProviderStateMixin {
                           ),),
                         ),
                       ),
-                      SizedBox(height: 120.0,)
+                      SizedBox(height: 100.0,)
 
                     ],
                   ),
